@@ -33,11 +33,43 @@ Este projeto tem como objetivo demonstrar uma arquitetura moderna de microsservi
 
 ## 📦 Estrutura dos Microsserviços
 
-📁 microsservicos-springboot/ 
-├── warehouse/ # Serviço de gerenciamento de estoque 
-├── storefront/ # Serviço de vitrine e pedidos 
-└── docker-compose.yml
+warehouse/ 
 
+├── .gradle/ # Arquivos internos do Gradle
+
+├── build/ # Saída de build (gerado automaticamente)
+
+├── gradle/ # Wrapper do Gradle 
+
+├── src/ # Código-fonte principal 
+
+│ ├── main/
+
+│ │ ├── java/ # Classes Java 
+
+│ │ └── resources/ # Arquivos de configuração (application.yml, etc.)
+
+│ └── test/ # Testes automatizados 
+
+├── .gitattributes # Configurações de atributos para Git
+
+├── .gitignore # Arquivos e pastas ignorados pelo Git
+
+├── build.gradle.kts # Script de build usando Kotlin DSL 
+
+├── docker-compose.yml # Configuração de containers Docker
+
+├── Dockerfile # Instruções para criar imagem Docker
+
+├── gradlew # Script para executar Gradle (Linux/macOS) 
+
+├── gradlew.bat # Script para executar Gradle (Windows) 
+
+├── HELP.md # Arquivo de ajuda/documentação
+
+├── settings.gradle.kts # Configurações do projeto Gradle 
+
+└── start-dev.sh # Script para iniciar ambiente de desenvolvimento
 
 ---
 
